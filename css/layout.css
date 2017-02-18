@@ -1,0 +1,99 @@
+/* 清楚默认样式 */
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+/* 设置整体样式 */
+body{
+	background: #9e9e9e;
+	font-family: "微软雅黑";
+	font-size: 1em;
+}
+p{
+	line-height: 1.5em;
+}
+/* 设置标题样式 */
+h1{
+	text-align: center;
+	margin-bottom: 10px;
+	letter-spacing: 24px;
+}
+h2{
+	font: bold 1.5em/1.3 "宋体";
+	border-bottom: 5px solid red;
+	width: 50%;
+	margin-bottom: 10px;
+}
+h3{
+	padding-top: 20px;
+	font: bold 1.3em/1.5 "宋体";
+	border-bottom: 5px solid green;
+}
+ul{
+	/* position: relative; */
+	list-style-type: none;
+	list-style-position: inside;
+	text-indent: 2em;
+}
+ol{
+	list-style-position: inside;
+	text-indent: 2em;
+}
+ul ol{
+	position: absolute;
+	top: 0px;
+	left: 3em;
+	list-style-position: inside;
+	/* text-indent: 4em; */
+}
+/* 设定整体宽度样式 */
+#container{
+	width: 800px;
+	box-sizing: border-box;
+	/* height: 842px; */
+	margin: 12px auto;
+	background: #fff;
+	padding: 10px 70px 20px 80px;
+	/* border: 1px solid red; */
+}
+header{
+	/* position: relative; */
+	/* border-bottom: 1px solid blue; */
+	padding: 5px 5px;
+}
+header div{
+	width: 65%;
+	float: left;
+}
+header figure{
+	float: right;
+	width: 30%;
+}
+header figure a{
+	text-align: center;
+	display: block;
+}
+header img{
+	width: 75%;
+}
+#internship>ol>li{
+	list-style-type: cjk-ideographic;
+	/* text-indent: 0; */
+}
+/* 清除浮动 */
+.clearfix::after{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+/* 设置求职意向一栏 */
+#job{
+	/* background-color: rgba(89, 92, 171, 0.3); */
+	box-shadow: 5px 6px 10px rgba(110, 0, 230, 0.37);
+	border-radius: 0.5em 0 0.5em 0;
+	/* border: 2px solid #009fd7; */
+	width: 82%;
+}
